@@ -1,7 +1,14 @@
 body{
   margin: 0px;
+  /*margin-top: 100px;*/
   margin-bottom: 10px;
   overflow-y: scroll;
+}
+
+#buffer{
+  width: 100%:
+  margin-top: 100px;
+  height: 100px;
 }
 
 .head {
@@ -60,10 +67,7 @@ body{
 
 .parallax {
   margin-top: 100px;
-  /* Set a specific height */
   height: 100%;
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -79,7 +83,6 @@ body{
   font-weight: bold;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   background-image: url(candle.jpg);
-  /*background-image: url(../frankelly.jpg);*/
   min-height: 80%;
   background-attachment: fixed;
   background-position: center;
@@ -148,4 +151,8 @@ li a {
 
 li a:hover {
     background-color: #111;
+}
+
+.anchor {
+  margin-bottom: 100px;
 }
