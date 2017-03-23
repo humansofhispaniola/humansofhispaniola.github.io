@@ -1767,6 +1767,11 @@
 		overflow-x: hidden;
 	}
 
+.hoh{
+	background-image: url("../../images/flag.jpg");
+	height: 100px;
+	width: 100px;
+}
 	.mainFont{
 		font-family: 'Hammersmith One', sans-serif;
 	}
@@ -2105,9 +2110,9 @@
 		background-repeat: repeat, no-repeat;
 	}
 
-/* One */
+/* About */
 
-	#one {
+	#about {
 		background: url("images/overlay.png"), url("../../images/one.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
@@ -2156,3 +2161,4 @@
 			}
 
 		}
+
