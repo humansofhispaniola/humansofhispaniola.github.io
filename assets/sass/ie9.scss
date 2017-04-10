@@ -1,54 +1,56 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
+@import 'libs/skel';
 
 /*
-	Big Picture by HTML5 UP
+	Landed by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 /* Loader */
 
-	body {
-		&:before,
-		&:after {
+	body.landing {
+		&:before, &:after {
 			display: none !important;
 		}
 	}
 
-/* Gallery */
+/* Icon */
 
-	.gallery {
-		&:after {
-			content: '';
-			display: block;
-			clear: both;
+	.icon {
+		&.alt {
+			color: inherit !important;
 		}
 
-		article {
-			float: left;
-		}
-	}
-
-/* Main */
-
-	.main {
-		&.fullscreen {
-			min-height: 0;
-		}
-
-		&.style1 {
-			> .content {
-				margin: 0 auto;
+		&.major {
+			&.alt {
+				&:before {
+					color: _palette(fg-bold) !important;
+				}
 			}
 		}
 	}
 
-/* Poptrox */
+/* Banner */
 
-	.poptrox-popup {
-		.loader {
-			display: none !important;
+	#banner {
+		&:after {
+			background-color: _palette(bg-transparent);
+		}
+	}
+
+/* Footer */
+
+	#footer {
+		.icons {
+			.icon {
+				&.alt {
+					&:before {
+						color: _palette(fg-bold) !important;
+					}
+				}
+			}
 		}
 	}
