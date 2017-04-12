@@ -1,13 +1,21 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
-/*
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
-/* Reset */
+.it{
+	font-style: italic;
+	font-size: 30%;
+}
+
+.sim{
+	background-color: black;
+	padding-top: 2em;
+	padding-left: 1em;
+}
+
+.cen{
+	text-align: center;
+}
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
@@ -1684,7 +1692,7 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #9bf1ff !important;
+			color: firebrick !important;
 		}
 
 		a:active {
@@ -2182,11 +2190,11 @@
 	}
 
 	a.icon.alt:hover:before {
-		background-color: #6fc3df;
+		background-color: honeydew;
 	}
 
 	a.icon.alt:active:before {
-		background-color: #37a6cb;
+		background-color: honeydew;
 	}
 
 /* Image */
@@ -2408,7 +2416,7 @@
 
 						ul.pagination li > .page.active:hover {
 							background-color: black;
-							color: #242943 !important;
+							color: firebrick !important;
 						}
 
 						ul.pagination li > .page.active:active {
@@ -2560,8 +2568,8 @@
 		button:active,
 		.button:hover,
 		.button:active {
-			box-shadow: inset 0 0 0 2px #9bf1ff;
-			color: #9bf1ff;
+			box-shadow: inset 0 0 0 2px firebrick;
+			color: firebrick;
 		}
 
 		input[type="submit"]:active,
@@ -2615,8 +2623,10 @@
 		input[type="button"].next,
 		button.next,
 		.button.next {
-			padding-right: 4.5em;
+			/*padding-right: 4.5em;*/
 			position: relative;
+			text-align: center;
+			border-radius: 5%;
 		}
 
 			input[type="submit"].next:before, input[type="submit"].next:after,
@@ -2642,7 +2652,9 @@
 				right: 1.5em;
 				top: 0;
 				vertical-align: middle;
+				text-align: center;
 				width: 36px;
+				border-radius: 5%;
 			}
 
 			input[type="submit"].next:before,
@@ -2650,7 +2662,7 @@
 			input[type="button"].next:before,
 			button.next:before,
 			.button.next:before {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36px' height='24px' viewBox='0 0 36 24' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cline x1='0' y1='12' x2='34' y2='12' /%3E%3Cline x1='25' y1='4' x2='34' y2='12.5' /%3E%3Cline x1='25' y1='20' x2='34' y2='11.5' /%3E%3C/svg%3E");
+				/*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36px' height='24px' viewBox='0 0 36 24' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cline x1='0' y1='12' x2='34' y2='12' /%3E%3Cline x1='25' y1='4' x2='34' y2='12.5' /%3E%3Cline x1='25' y1='20' x2='34' y2='11.5' /%3E%3C/svg%3E");*/
 			}
 
 			input[type="submit"].next:after,
@@ -2658,7 +2670,7 @@
 			input[type="button"].next:after,
 			button.next:after,
 			.button.next:after {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36px' height='24px' viewBox='0 0 36 24' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %239bf1ff%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cline x1='0' y1='12' x2='34' y2='12' /%3E%3Cline x1='25' y1='4' x2='34' y2='12.5' /%3E%3Cline x1='25' y1='20' x2='34' y2='11.5' /%3E%3C/svg%3E");
+				/*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36px' height='24px' viewBox='0 0 36 24' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %239bf1ff%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cline x1='0' y1='12' x2='34' y2='12' /%3E%3Cline x1='25' y1='4' x2='34' y2='12.5' /%3E%3Cline x1='25' y1='20' x2='34' y2='11.5' /%3E%3C/svg%3E");*/
 				opacity: 0;
 				z-index: 1;
 			}
@@ -2682,7 +2694,9 @@
 				input[type="button"].next,
 				button.next,
 				.button.next {
-					padding-right: 5em;
+					/*padding-right: 5em;*/
+					text-align: center;
+					border-radius: 5%;
 				}
 
 			}
@@ -2694,7 +2708,7 @@
 		.button.special {
 			background-color: #ffffff;
 			box-shadow: none;
-			color: #242943;
+			color: firebrick;
 		}
 
 			input[type="submit"].special:hover, input[type="submit"].special:active,
@@ -2707,7 +2721,7 @@
 			.button.special:hover,
 			.button.special:active {
 				background-color: black;
-				color: #242943 !important;
+				color: firebrick !important;
 			}
 
 			input[type="submit"].special:active,
@@ -3178,11 +3192,11 @@
 			}
 
 			#header .logo:hover strong {
-				background-color: #9bf1ff;
+				background-color: firebrick;
 			}
 
 			#header .logo:active strong {
-				background-color: #53e3fb;
+				background-color: firebrick;
 			}
 
 		#header nav {
