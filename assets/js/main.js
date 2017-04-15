@@ -1,9 +1,3 @@
-/*
-	Landed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function($) {
 
 	skel.breakpoints({
@@ -149,7 +143,6 @@
 					});
 
 					return $(this);
-
 				};
 
 				$window
@@ -170,36 +163,29 @@
 						on, off;
 
 					on = function() {
-
 						// Use main <img>'s src as this spotlight's background.
 							$this.css('background-image', 'url("' + $this.find('.image.main > img').attr('src') + '")');
 
 						// Enable transitions (if supported).
 							if (skel.canUse('transition')) {
-
 								var top, bottom, mode;
 
 								// Side-specific scrollex tweaks.
 									if ($this.hasClass('top')) {
-
 										mode = 'top';
 										top = '-20%';
 										bottom = 0;
-
 									}
-									else if ($this.hasClass('bottom')) {
 
+									else if ($this.hasClass('bottom')) {
 										mode = 'bottom-only';
 										top = 0;
 										bottom = '20%';
-
 									}
 									else {
-
 										mode = 'middle';
 										top = 0;
 										bottom = 0;
-
 									}
 
 								// Add scrollex.

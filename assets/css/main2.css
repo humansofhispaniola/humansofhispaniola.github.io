@@ -1,20 +1,41 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
-
+.thin{
+	border-bottom: solid 0.35em #e44c65;
+}
 .it{
 	font-style: italic;
 	font-size: 30%;
 }
 
 .sim{
-	background-color: black;
+	background-color: 152e37;
 	padding-top: 2em;
 	padding-left: 1em;
 }
 
 .cen{
 	text-align: center;
+}
+
+.teampics{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/*display: inline-block;*/
+	height: 30em;
+	width: 100%;
+}
+
+
+#footer .inner .icons{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#footer .inner{
+	width: 100%;
 }
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -1649,7 +1670,7 @@
 
 	body, input, select, textarea {
 		color: #ffffff;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: 'Cabin Sketch', cursive;
 		font-size: 17pt;
 		font-weight: 300;
 		letter-spacing: 0.025em;
@@ -1785,7 +1806,7 @@
 
 	code {
 		background: rgba(212, 212, 255, 0.035);
-		font-family: "Courier New", monospace;
+		font-family: 'Cabin Sketch', cursive;
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
@@ -1793,7 +1814,7 @@
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
+		font-family: 'Cabin Sketch', cursive;
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
 	}
@@ -2197,6 +2218,11 @@
 		background-color: honeydew;
 	}
 
+
+.image2{
+	width: 50%;
+	height: 100%;
+}
 /* Image */
 
 	.image {
@@ -2302,6 +2328,7 @@
 
 			ul.icons li {
 				display: inline-block;
+				justify-content: center;
 				padding: 0 1em 0 0;
 			}
 
@@ -2976,7 +3003,7 @@
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
 			flex-direction: row;
-			background-color: black;
+			background-color: #193742;
 		}
 
 			.spotlights > section > .image {
@@ -3452,7 +3479,7 @@
 			-webkit-pointer-events: none;
 			-ms-pointer-events: none;
 			pointer-events: none;
-			background-color: #242943;
+			background-color: #193742;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3631,11 +3658,14 @@
 /* Main */
 
 	#main {
-		background-color: #272833;
+		background-color: #193742;
+
 	}
 
 		#main > * {
-			border-top: solid 1px rgba(212, 212, 255, 0.1);
+			/*border-top: solid 1px rgba(212, 212, 255, 0.1);*/
+			border-top: solid 0.35em #e44c65;
+
 		}
 
 			#main > *:first-child {
@@ -3643,6 +3673,7 @@
 			}
 
 			#main > * > .inner {
+				/*border-bottom: solid 0.35em #e44c65;*/
 				padding: 4em 0 2em 0 ;
 				margin: 0 auto;
 				max-width: 65em;
@@ -3652,6 +3683,7 @@
 				@media screen and (max-width: 736px) {
 
 					#main > * > .inner {
+						border-bottom: solid 0.35em #e44c65;
 						padding: 3em 0 1em 0 ;
 						width: calc(100% - 3em);
 					}
@@ -3749,7 +3781,15 @@
 
 /* Footer */
 
+#footer{
+	background-color: #0C1B22;
+	border-top: solid 0.35em #e44c65;
+
+}
 	#footer .copyright {
+		width: 100%;
+		display: flex;
+		justify-content: center;
 		font-size: 0.8em;
 		list-style: none;
 		padding-left: 0;
@@ -3759,6 +3799,7 @@
 			border-left: solid 1px rgba(212, 212, 255, 0.1);
 			color: rgba(244, 244, 255, 0.2);
 			display: inline-block;
+			justify-content: center;
 			line-height: 1;
 			margin-left: 1em;
 			padding-left: 1em;
@@ -3772,8 +3813,12 @@
 
 	@media screen and (max-width: 480px) {
 
+#footer{
+	background-color: #0C1B22;
+}
 		#footer .copyright li {
 			display: block;
+			justify-content: center;
 			border-left: 0;
 			margin-left: 0;
 			padding-left: 0;
@@ -3785,7 +3830,7 @@
 /* Wrapper */
 
 	#wrapper {
-		background-color: #272833;
+		background-color: #193742;
 		-moz-transition: -moz-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
 		-webkit-transition: -webkit-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
 		-ms-transition: -ms-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;

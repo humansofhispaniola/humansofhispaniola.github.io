@@ -9,11 +9,6 @@
 	/*width: 100%;*/
 }
 
-.sqz{
-	height: 35em;
-	justify-content: center;
-}
-
 /* Reset */
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
@@ -1573,8 +1568,8 @@
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.75);
-		font-family: "Roboto", Helvetica, sans-serif;
-		font-size: 15pt;
+		/*font-family: "Roboto", Helvetica, sans-serif;*/
+		font-family: 'Cabin Sketch', cursive;
 		font-weight: 100;
 		line-height: 1.75em;
 	}
@@ -1677,16 +1672,16 @@
 	code {
 		background: rgba(255, 255, 255, 0.075);
 		border-radius: 4px;
-		font-family: "Courier New", monospace;
-		font-size: 0.9em;
+		/*font-family: "Courier New", monospace;*/
+		font-family: 'Cabin Sketch', cursive;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
 	}
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
-		font-size: 0.9em;
+		/*font-family: "Courier New", monospace;*/
+		font-family: 'Cabin Sketch', cursive;
 		margin: 0 0 2em 0;
 	}
 
@@ -2109,7 +2104,7 @@
 	header p {
 		color: #ffffff;
 		position: relative;
-		margin: 0 0 1.5em 0;
+		margin: 0 0 0 0;
 	}
 
 	header h2 + p {
@@ -2136,6 +2131,7 @@
 		margin: 0 0 4em 0;
 		position: relative;
 		text-align: center;
+		/*padding-bottom: 0;*/
 	}
 
 		header.major:after {
@@ -2145,6 +2141,7 @@
 			height: 0.2em;
 			max-width: 20em;
 			width: 75%;
+			/*padding-bottom: 0;*/
 		}
 
 	footer.major {
@@ -2415,19 +2412,89 @@
 				text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff;
 			}
 
-		.icon.major {
+		.icon.major.mar {
 			background: #272833;
-			background-image: url("../../images/sjmjim.png");
+			background: url("../../images/martin.png");
+			background-size: cover;
 			border-radius: 100%;
 			cursor: default;
 			display: inline-block;
 			height: 6em;
 			line-height: 6em;
-			margin: 0 0 2em 0;
+			margin: 0 0 1em 0;
+			text-align: center;
+			width: 6em;
+		}
+		.icon.major.sjm {
+			background: #272833;
+			background: url("../../images/sjmjim.png");
+			background-size: cover;
+			border-radius: 100%;
+			cursor: default;
+			display: inline-block;
+			height: 6em;
+			line-height: 6em;
+			margin: 0 0 1em 0;
+			text-align: center;
+			width: 6em;
+		}
+		.icon.major.recon {
+			background: #272833;
+			background: url("../../images/rec.jpg");
+			background-size: cover;
+			border-radius: 100%;
+			cursor: default;
+			display: inline-block;
+			height: 6em;
+			line-height: 6em;
+			margin: 0 0 1em 0;
+			text-align: center;
+			width: 6em;
+		}
+		.icon.major.lake {
+			background: #272833;
+			background: url("../../images/park.png");
+			background-size: contain;
+			border-radius: 100%;
+			cursor: default;
+			display: inline-block;
+			height: 6em;
+			line-height: 6em;
+			margin: 0 0 1em 0;
+			text-align: center;
+			width: 6em;
+		}
+		.icon.major.bono {
+			background: #272833;
+			background: url("../../images/cb.jpg");
+			background-size: cover;
+			border-radius: 100%;
+			cursor: default;
+			display: inline-block;
+			height: 6em;
+			line-height: 6em;
+			margin: 0 0 1em 0;
 			text-align: center;
 			width: 6em;
 		}
 
+		.icon.major.loy {
+			background: #272833;
+			background: url("../../images/loyola.jpg");
+			background-size: cover;
+			border-radius: 100%;
+			cursor: default;
+			display: inline-block;
+			height: 6em;
+			line-height: 6em;
+			margin: 0 0 1em 0;
+			text-align: center;
+			width: 6em;
+		}
+
+		.icon.major:hover{
+			cursor: pointer;
+		}
 			.icon.major:before {
 				font-size: 2.25em;
 			}
@@ -2971,7 +3038,7 @@
 			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 			transition: transform 1s ease, opacity 1s ease;
-			background: rgba(23, 24, 32, 0.95);
+			background: rgba(25, 55, 66, .95);
 			border-style: solid;
 			opacity: 1;
 			position: absolute;
@@ -3088,8 +3155,10 @@
 		padding: 6em 0 4em 0;
 	}
 
-		.wrapper.style2 {
-			background: #e44c65;
+		.wrapper.style2{
+			background: #193742;
+			border-top: solid 0.35em #e44c65;
+			border-bottom: solid 0.35em #e44c65;
 		}
 
 			.wrapper.style2 input[type="text"]:focus,
@@ -3340,9 +3409,10 @@
 
 	#banner {
 		background-attachment: fixed;
-		background-color: #272833;
-		background-image: url("../../images/slated (1).jpg");
-		/*background-position: center center;*/
+		/*background-color: #0b181e;*/
+		background: linear-gradient(#1b3b46, 	#0b181e);
+		/*background-image: url("../../images/slated (1).jpg");*/
+		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
 		min-height: 50vh;
@@ -3422,9 +3492,13 @@
 /* Footer */
 
 	#footer {
-		background: #272833;
+		background: #0C1B22;
 		padding: 6em 0;
 		text-align: center;
+	}
+
+	#footer h1{
+		font-size: 150%;
 	}
 
 		#footer .icons .icon.alt {
@@ -3560,7 +3634,7 @@
 				}
 
 				.spotlight .content {
-					background-color: #1c1d26;
+					background-color: #193742;
 					border-width: 0 !important;
 					border-top-width: 0.35em !important;
 					bottom: auto !important;
