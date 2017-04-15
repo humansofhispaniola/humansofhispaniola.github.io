@@ -5,7 +5,7 @@
 	/*background-image: url("../../images/banner.png");*/
 	/*src: url("../../images/banner.png");*/
 	/*background-size: cover;*/
-	height: 30%;
+	height: 30em;
 	/*width: 100%;*/
 }
 
@@ -3658,7 +3658,6 @@
 			}
 
 		/* Banner */
-
 			#banner {
 				background-attachment: scroll;
 			}
@@ -3687,6 +3686,9 @@
 			#footer {
 				padding: 4.5em 0;
 			}
+			#logo{
+				height: 5em;
+			}
 
 	}
 
@@ -3698,6 +3700,9 @@
 
 	@media screen and (max-width: 736px) {
 
+		#logo{
+			height: 2em;
+		}
 		/* Basic */
 
 			html, body {
@@ -3992,6 +3997,10 @@
 /* XSmall */
 
 	@media screen and (max-width: 480px) {
+
+		#logo{
+			height: 1em;
+		}
 
 		/* Basic */
 
@@ -4373,3 +4382,4 @@
 																opacity: 1;
 																visibility: visible;
 															}
+
