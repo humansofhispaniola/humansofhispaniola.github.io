@@ -3701,7 +3701,7 @@
 	@media screen and (max-width: 736px) {
 
 		#logo{
-			height: 2em;
+			height: 10em;
 		}
 		/* Basic */
 
@@ -3999,7 +3999,7 @@
 	@media screen and (max-width: 480px) {
 
 		#logo{
-			height: 1em;
+			height: 5em;
 		}
 
 		/* Basic */
