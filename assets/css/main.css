@@ -3687,7 +3687,7 @@
 				padding: 4.5em 0;
 			}
 			#logo{
-				height: 15em;
+				height: 20em;
 			}
 
 	}
@@ -3701,7 +3701,7 @@
 	@media screen and (max-width: 736px) {
 
 		#logo{
-			height: 10em;
+			height: 17em;
 		}
 		/* Basic */
 
@@ -3999,7 +3999,7 @@
 	@media screen and (max-width: 480px) {
 
 		#logo{
-			height: 5em;
+			height: 12em;
 		}
 
 		/* Basic */
