@@ -1,6 +1,12 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
+.mini{
+	padding-left: 2%;
+	height: inherit;
+	background-size: cover;
+}
+
 .tip{
 	display: flex;
 	text-align: center;
